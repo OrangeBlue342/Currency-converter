@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 50px auto;
+    background-color: hsl(50, 60%, 54%);
+    border: 1px groove rgb(122, 137, 14);
+    border-radius: 20px;
+    box-shadow: 25px black;
+    overflow-x: auto;
+    margin:auto
+}
+
+.body {
+    background-image:m ;
+    margin:auto;
+    font-family: 'Lucida Sans', sans-serif;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.fieldset {
+    border:none;
+    text-align: center;
+}
+
+.fieldset_legend {
+    font-size: medium;
+    text-align: center;
+    padding-top: 30px;
+}
+

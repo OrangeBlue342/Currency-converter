@@ -1,0 +1,23 @@
+.form_labelText {
+    max-width: 120px;
+    width: 100%;
+    display: inline-block;
+    
+}
+
+.calcule {
+    width: 50%;
+    border: none;
+    background-color: blue;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.calcule:hover {
+    background-color: rgb(49, 49, 253);
+}
+
+.calcule:active {
+    background-color: rgb(89, 89, 237);
+}
