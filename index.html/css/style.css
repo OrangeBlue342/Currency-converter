@@ -18,7 +18,8 @@ html {
 }
 
 .body {
-    background-image: url(images/monety.jpg) ;
+    background-image: url(images/monety.jpg);
+    background-repeat: repeat;
     margin:auto;
     font-family: 'Lucida Sans', sans-serif;
     padding-top: 50px;
