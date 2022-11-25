@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Przelicznik walut</title>
-        <link rel="icon" href="images/moneta.jpg">
+        <link rel="icon" href="css/images/moneta.jpg">
         <meta property="og:image" content="images/share.png">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet"> 
