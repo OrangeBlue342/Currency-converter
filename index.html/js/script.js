@@ -1,48 +1,64 @@
-let formElement = document.querySelector(".js-form");
+{
+const calculateResult = (cours, value) => {
+    const eur = 4.7067;
+    const gbd = 5.4075;
+    const usd = 4.5337;
+    const chf = 4.7675;
 
-let kwotaElement = document.querySelector(".js-Numbertoconverse");
-
-let rateElement = document.querySelector(".js-rate");
-
-let buttonElement = document.querySelector(".calcule");
-
-let resultElement = document.querySelector(".js-result")
-
-let selectElement = document.querySelector(".js-value")
-
-
-
-let eur = 4.7067;
-let gbd = 5.4075;
-let usd = 4.5337;
-let chf = 4.7675;
-
-
+    
+    switch (value) {
+        case "eur":
+            return cours * eur;
+    
+        case "gbd":
+            return cours * gbd;
+    
+        case "usd":
+            return cours * usd;
+    
+        case "chf":
+            return cours * chf;
+    }
+    const formElement = document.querySelector(".js-form");
 
 formElement.addEventListener("submit", (event) => {
     event.preventDefault(); 
-let cours = +kwotaElement.value;
-let value = selectElement.value;
-let result;
 
-switch (value) {
-    case "eur":
-        result = cours * eur;
-        break;
+    const kwotaElement = document.querySelector(".js-Numbertoconverse");
 
-    case "gbd":
-        result = cours * gbd;
-        break;
+const resultElement = document.querySelector(".js-result")
 
-    case "usd":
-        result = cours * usd;
-        break;
+const selectElement = document.querySelector(".js-value")
 
-    case "chf":
-        result = cours * chf;
-        break;
-}
+const cours = +kwotaElement.value;
+const value = selectElement.value;
+
+const result = calculateResult(cours, value);
+result();
 
 resultElement.innerHTML = result.toFixed(2); {value}
 
-});
+})};
+
+const init = () => {
+    const formElement = document.querySelector(".js-form");
+
+    formElement.addEventListener("submit", (event) => {
+        event.preventDefault(); 
+    
+        const kwotaElement = document.querySelector(".js-Numbertoconverse");
+    
+    const resultElement = document.querySelector(".js-result")
+    
+    const selectElement = document.querySelector(".js-value")
+    
+    const cours = +kwotaElement.value;
+    const value = selectElement.value;
+    
+    const result = calculateResult(cours, value);
+    
+    resultElement.innerHTML = result.toFixed(2); {value}
+    
+    })};
+    init();
+}
