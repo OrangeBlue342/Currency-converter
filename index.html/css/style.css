@@ -14,7 +14,9 @@ html {
     border-radius: 20px;
     box-shadow: 25px black;
     overflow-x: auto;
-    margin:auto
+    margin:auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .body {
