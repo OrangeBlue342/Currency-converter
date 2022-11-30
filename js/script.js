@@ -40,7 +40,7 @@ resultElement.innerHTML = result.toFixed(2); {value}
 
 })};
 
-const init = () => {
+function init = () => {
     const formElement = document.querySelector(".js-form");
 
     formElement.addEventListener("submit", (event) => {
@@ -60,5 +60,5 @@ const init = () => {
     resultElement.innerHTML = result.toFixed(2); {value}
     
     })};
-    init();
+    
 }
